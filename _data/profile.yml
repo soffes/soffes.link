@@ -15,6 +15,9 @@ socials:
   - name: YouTube
     icon: youtube
     url: https://youtube.com/@soffes
+  - name: TikTok
+    icon: tiktok
+    url: https://tiktok.com/@samsoffes
 
 # The big buttons, in order. Add a new one by adding a title and url.
 # `icon` is optional and works the same as above.
@@ -34,3 +37,6 @@ links:
   - title: YouTube
     icon: youtube
     url: https://youtube.com/@soffes
+  - title: TikTok
+    icon: tiktok
+    url: https://tiktok.com/@samsoffes
