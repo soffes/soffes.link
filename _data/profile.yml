@@ -1,0 +1,36 @@
+name: Sam Soffes
+bio: Exploring the world in my van
+
+# Path to an image, e.g. /assets/images/avatar.jpg. Leave blank for a placeholder circle.
+avatar: /assets/images/soffes.jpg
+
+# Small icons under the bio. `icon` must match a file in _includes/icons (without .svg).
+socials:
+  - name: Instagram
+    icon: instagram
+    url: https://instagram.com/soffes
+  - name: Threads
+    icon: threads
+    url: https://threads.com/@soffes
+  - name: YouTube
+    icon: youtube
+    url: https://youtube.com/@soffes
+
+# The big buttons, in order. Add a new one by adding a title and url.
+# `icon` is optional and works the same as above.
+links:
+  - title: 2025 Year in Review
+    url: https://soff.es/blog/2025
+  - title: My Blog
+    url: https://soff.es/soffes
+  - title: About Me
+    url: https://soff.es/about
+  - title: Instagram
+    icon: instagram
+    url: https://instagram.com/soffes
+  - title: Threads
+    icon: threads
+    url: https://threads.com/@soffes
+  - title: YouTube
+    icon: youtube
+    url: https://youtube.com/@soffes

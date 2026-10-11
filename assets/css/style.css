@@ -1,0 +1,125 @@
+:root {
+  --background: #24402c;
+  --text: #f4f1e6;
+  --card: #f4f1e6;
+  --card-text: #1f3324;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 64px 16px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.avatar {
+  display: block;
+  width: 112px;
+  height: 112px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  object-fit: cover;
+}
+
+h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+header p {
+  margin: 4px 0 0;
+  opacity: 0.85;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.socials a {
+  display: block;
+  padding: 8px;
+  color: inherit;
+  border-radius: 50%;
+  transition: transform 0.15s ease;
+}
+
+.socials svg {
+  display: block;
+}
+
+.links li + li {
+  margin-top: 14px;
+}
+
+.links a {
+  position: relative;
+  display: block;
+  padding: 20px 64px;
+  background: var(--card);
+  color: var(--card-text);
+  border-radius: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.15s ease;
+}
+
+.links svg {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+footer {
+  margin-top: 48px;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--text);
+  outline-offset: 3px;
+}
+
+@media (hover: hover) {
+  .socials a:hover {
+    transform: scale(1.1);
+  }
+
+  .links a:hover {
+    transform: scale(1.02);
+  }
+}

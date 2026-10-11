@@ -1,0 +1,9 @@
+# Site content lives in _data/profile.yml
+url: https://soffes.link
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - netlify.toml
+  - vendor
