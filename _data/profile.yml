@@ -22,6 +22,8 @@ socials:
 # The big buttons, in order. Add a new one by adding a title and url.
 # `icon` is optional and works the same as above.
 links:
+  - title: My Travel Plan
+    url: https://soff.es/plan
   - title: 2025 Year in Review
     url: https://soff.es/blog/2025
   - title: My Blog
