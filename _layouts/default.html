@@ -1,0 +1,24 @@
+{%- assign profile = site.data.profile -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ profile.name }}</title>
+  <meta name="description" content="{{ profile.bio | escape }}">
+  <meta property="og:title" content="{{ profile.name | escape }}">
+  <meta property="og:description" content="{{ profile.bio | escape }}">
+  <meta property="og:url" content="{{ site.url }}">
+  {%- if profile.avatar %}
+  <meta property="og:image" content="{{ profile.avatar | absolute_url }}">
+  {%- endif %}
+  <meta name="theme-color" content="#24402c">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {%- if site.fathom_site_id %}
+  <script src="https://cdn.usefathom.com/script.js" data-site="{{ site.fathom_site_id }}" defer></script>
+  {%- endif -%}
+</head>
+<body>
+  {{ content }}
+</body>
+</html>

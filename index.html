@@ -1,60 +1,38 @@
 ---
 ---
 {%- assign profile = site.data.profile -%}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ profile.name }}</title>
-  <meta name="description" content="{{ profile.bio | escape }}">
-  <meta property="og:title" content="{{ profile.name | escape }}">
-  <meta property="og:description" content="{{ profile.bio | escape }}">
-  <meta property="og:url" content="{{ site.url }}">
-  {%- if profile.avatar %}
-  <meta property="og:image" content="{{ profile.avatar | absolute_url }}">
-  {%- endif %}
-  <meta name="theme-color" content="#24402c">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  {%- if site.fathom_site_id %}
-  <script src="https://cdn.usefathom.com/script.js" data-site="{{ site.fathom_site_id }}" defer></script>
-  {%- endif -%}
-</head>
-<body>
-  <main>
-    <header>
-      {%- if profile.avatar %}
-      <img class="avatar" src="{{ profile.avatar | relative_url }}" alt="{{ profile.name | escape }}" width="112" height="112">
-      {%- else %}
-      <div class="avatar"></div>
-      {%- endif %}
-      <h1>{{ profile.name }}</h1>
-      <p>{{ profile.bio }}</p>
-      {%- if profile.socials %}
-      <ul class="socials">
-        {%- for social in profile.socials %}
-        <li>
-          <a href="{{ social.url }}" rel="me" aria-label="{{ social.name | escape }}">
-            {%- include icons/{{ social.icon }}.svg -%}
-          </a>
-        </li>
-        {%- endfor %}
-      </ul>
-      {%- endif %}
-    </header>
-
-    <ul class="links">
-      {%- for link in profile.links %}
+<main>
+  <header>
+    {%- if profile.avatar %}
+    <img class="avatar" src="{{ profile.avatar | relative_url }}" alt="{{ profile.name | escape }}" width="112" height="112">
+    {%- else %}
+    <div class="avatar"></div>
+    {%- endif %}
+    <h1>{{ profile.name }}</h1>
+    <p>{{ profile.bio }}</p>
+    {%- if profile.socials %}
+    <ul class="socials">
+      {%- for social in profile.socials %}
       <li>
-        <a href="{{ link.url }}">
-          {%- if link.icon %}{% include icons/{{ link.icon }}.svg %}{% endif -%}
-          {{ link.title }}
+        <a href="{{ social.url }}" rel="me" aria-label="{{ social.name | escape }}">
+          {%- include icons/{{ social.icon }}.svg -%}
         </a>
       </li>
       {%- endfor %}
     </ul>
+    {%- endif %}
+  </header>
 
-    <footer>© {{ site.time | date: "%Y" }} {{ profile.name }}</footer>
-  </main>
-</body>
-</html>
+  <ul class="links">
+    {%- for link in profile.links %}
+    <li>
+      <a href="{{ link.url }}">
+        {%- if link.icon %}{% include icons/{{ link.icon }}.svg %}{% endif -%}
+        {{ link.title }}
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+
+  <footer>© {{ site.time | date: "%Y" }} {{ profile.name }}</footer>
+</main>

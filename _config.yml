@@ -1,5 +1,6 @@
-# Site content lives in _data/profile.yml
 url: https://soffes.link
+encoding: UTF-8
+strict_front_matter: true
 fathom_site_id: IQSRZQWU
 exclude:
   - Gemfile
@@ -7,3 +8,8 @@ exclude:
   - README.md
   - netlify.toml
   - vendor
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
