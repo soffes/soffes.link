@@ -16,6 +16,9 @@
   {%- endif %}
   <meta name="theme-color" content="#24402c">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {%- if site.fathom_site_id %}
+  <script src="https://cdn.usefathom.com/script.js" data-site="{{ site.fathom_site_id }}" defer></script>
+  {%- endif -%}
 </head>
 <body>
   <main>

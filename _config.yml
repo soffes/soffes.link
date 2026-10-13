@@ -1,6 +1,6 @@
 # Site content lives in _data/profile.yml
 url: https://soffes.link
-
+fathom_site_id: IQSRZQWU
 exclude:
   - Gemfile
   - Gemfile.lock
