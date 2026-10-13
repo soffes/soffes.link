@@ -2,6 +2,7 @@ url: https://soffes.link
 encoding: UTF-8
 strict_front_matter: true
 fathom_site_id: IQSRZQWU
+cloudflare_analytics_token: 32615e6b18074e1dbcbd65b7292e8559
 exclude:
   - Gemfile
   - Gemfile.lock
