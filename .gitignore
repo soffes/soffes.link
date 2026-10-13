@@ -6,3 +6,6 @@ _site/
 vendor/
 .DS_Store
 .ruby-lsp/
+
+# Local Netlify folder
+.netlify
